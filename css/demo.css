@@ -1,0 +1,178 @@
+        html{
+            overflow: hidden;
+        }
+        body{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font: 0.8em arial;
+        }
+        #screen{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background:  url("../images/BackGround.jpg");
+            background-size: cover;
+            overflow: hidden;
+        }
+        #screen img, canvas{
+            position: absolute;
+            left: -9999px;
+            cursor: pointer;
+            image-rendering: optimizeSpeed;
+        }
+        #command{
+            position: fixed;
+            bottom: 1em;
+            right: 2em;
+           /* width: 260px;*/
+            z-index: 30000;
+            background: rgba(0,0,0,.5);
+            padding-right: 10px; 
+        }
+        #bar{
+            position: relative;
+            top: .6em;
+            left: .2em;
+            height: 35px;
+        }
+        #bar .button{
+            /*position: absolute;*/
+            background: #222;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            float: left;
+            margin-left: 5px;
+        }
+        #bar .loaded {
+            background: #666;
+        }
+        #bar .viewed {
+            background: #fff;
+        }
+        #bar .selected {
+            background: #f00;
+        }
+        #urlInfo {
+            position: absolute;
+            /*background: url(images/r.gif) no-repeat 0 4px;*/
+            visibility: hidden;
+            z-index: 30000;
+            padding-left: 12px;
+            cursor: pointer;
+        }
+        #screen .fog {
+            position: absolute;
+            background: #fff;
+            opacity: 0.1;
+            filter: alpha(opacity=10);
+        }
+        #printBox{
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            top: 50%;
+            right: 0;
+            margin-top: -100px;
+            background:rgba(102,102,102,.5);
+            z-index: 99999999;
+            text-align: center;
+            line-height: 80px;
+        }
+        #printBox>button{
+            width: 120px;
+            height: 35px;
+            border: thin solid #fff;
+            color: #fff;
+            margin:1em 3.6em;
+            background: #000;
+        }
+        canvas{
+            overflow: hidden;
+        }
+        #mask{
+            width: 800px;
+            height: 50px;
+            position: absolute;
+            top: 55px;
+            left: 300px;
+            background: url("../images/5555.png") repeat-x;
+            z-index:99999999;
+            list-style-type: none;
+            padding-left: 0;
+            display: none;
+            margin-top: 0;
+            transition: margin-top 0.1s linear;
+        }
+        /* #mask>li{
+            width:100%;
+            height: 0;
+            margin-top: 10px;
+            border-top: thin solid #fff;
+        } */
+        #common{
+            position: fixed;
+            top: 1em;
+            left:1em;
+            width: 150px;
+            z-index: 9999999;
+            background: rgba(0,0,0,0.5);
+            border: thin solid #fff;
+        }
+        #check{
+            position: relative;
+            top: 1.5em;
+            left: 1.5em;
+            width: 100%;
+            text-align: left;
+        }
+        #check .checked{
+            /*position: absolute;*/
+            /*background: #222;*/
+            /*background: url("../images/02.JPG");*/
+            background-size: cover;
+            width: 115px;
+            height: 60px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #check .checked>a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        #check .checked:first-child{
+            background: url("../newImages/02.jpg");
+            background-size: cover;
+        }
+         #check .checked:nth-child(3){
+            background: url("../newImages/04.jpg");
+            background-size: cover;
+        }
+         #check .checked:nth-child(5){
+            background: url("../newImages/64.jpg");
+            background-size: cover;
+        }
+         #check .checked:nth-child(7){
+            background: url("../newImages/09.jpg");
+            background-size: cover;
+        }
+         #check .checked:nth-child(9){
+            background: url("../newImages/53.jpg");
+            background-size: cover;
+        }
+         #check .checked:nth-child(11){
+            background: url("../newImages/37.jpg");
+            background-size: cover;
+        }
+         #check .border {
+            border: thin solid #fff;
+        }
+        p{
+            font-size:10px;
+        }

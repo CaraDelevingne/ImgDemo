@@ -1,5 +1,5 @@
 #Image Demo
-伪交互静态页面demo
+假装自己是机器作画..
 
 
-#### DEMO:http://htmlpreview.github.io/?https://github.com/CaraDelevingne/ImgDemo/blob/master/RainPrincess.html
+#### [demo](https://caraws.github.io/ImgDemo/RainPrincess.html)
